@@ -1,12 +1,12 @@
 package com.generics;
 
-public class FloatMaximum {
+public class StringMaximum {
     public static void main(String[] args) {
 
-        Float fl = FloatMaximum(31.2f, 62.2f, 3.2f);
-        System.out.println("Maximum Float is: "+fl);
+        String string = StringMaximum("Apple", "Peach", "Banana");
+        System.out.println("Maximum String is: "+string);
     }
-    public static Float FloatMaximum(Float firstElement, Float secondElement, Float thirdElement) {
+    public static String StringMaximum(String firstElement, String secondElement, String thirdElement) {
 
         if (firstElement.compareTo(secondElement) >= 0 && firstElement.compareTo(thirdElement) >= 0) {
             return firstElement;
@@ -19,30 +19,29 @@ public class FloatMaximum {
         if (thirdElement.compareTo(firstElement) >= 0 && thirdElement.compareTo(secondElement) >= 0) {
             return thirdElement;
         }
-        return 0.0f;
+        return "";
     }
+}
+
+//public class StringMaximum {
 //    public static void main(String[] args) {
-//        Float [] arr = new Float[3];
-//        arr[0]=3.2f;
-//        arr[1]=11.1f;
-//        arr[2]=2.9f;
+//        String[] arr = {"Apple", "Peach", "Banana"};
 //        printArray(arr);
 //        getMax(arr);
-//    }
-//    public static void printArray(Float[]arr){
+//        }
+//  public static void printArray(String[] arr){
 //        System.out.println("Array is: ");
-//        for (float a:
+//        for (String a:
 //                arr) {
 //            System.out.print(a+" ");
 //        }
 //    }
-//    public static void getMax(Float []arr){
-//        float max = arr[0];
+//    public static void getMax(String[] arr){
+//        String max = arr[0];
 //        for(int i=0;i<arr.length;i++){
-//            Float compare = (float) arr[i].compareTo(max);
+//            int compare = (arr[i].compareTo(max));
 //            if(compare>0)
 //                max = arr[i];
 //        }
 //        System.out.println("\nMaximum Integer is: "+max);
-//    }
-}
+//   }
