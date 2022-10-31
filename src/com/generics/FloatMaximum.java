@@ -1,11 +1,12 @@
 package com.generics;
-public class IntegerMaximum {
+
+public class FloatMaximum {
     public static void main(String[] args) {
 
-        Integer integer = IntegerMaximum(31, 67, 32);
-        System.out.println("Maximum Integer is: "+integer);
+        Float fl = FloatMaximum(31.2f, 62.2f, 3.2f);
+        System.out.println("Maximum Float is: "+fl);
     }
-    public static Integer IntegerMaximum(Integer firstElement, Integer secondElement, Integer thirdElement) {
+    public static Float FloatMaximum(Float firstElement, Float secondElement, Float thirdElement) {
 
         if (firstElement.compareTo(secondElement) >= 0 && firstElement.compareTo(thirdElement) >= 0) {
             return firstElement;
@@ -18,29 +19,29 @@ public class IntegerMaximum {
         if (thirdElement.compareTo(firstElement) >= 0 && thirdElement.compareTo(secondElement) >= 0) {
             return thirdElement;
         }
-        return 0;
+        return 0.0f;
     }
-
 //    public static void main(String[] args) {
-//        Integer[]arr={11,2,3};
-//        // Integer[]arr={1,41,9};
-//        // Integer[]arr={10,4,91};
+//        Float [] arr = new Float[3];
+//        arr[0]=3.2f;
+//        arr[1]=11.1f;
+//        arr[2]=2.9f;
 //        printArray(arr);
 //        getMax(arr);
 //    }
-//    public static void printArray(Integer[]arr){
+//    public static void printArray(Float[]arr){
 //        System.out.println("Array is: ");
-//        for (int a:
-//             arr) {
+//        for (float a:
+//                arr) {
 //            System.out.print(a+" ");
 //        }
 //    }
-//    public static void getMax(Integer []arr){
-//        int max = arr[0];
+//    public static void getMax(Float []arr){
+//        float max = arr[0];
 //        for(int i=0;i<arr.length;i++){
-//                Integer compare = arr[i].compareTo(max);
-//                if(compare>0)
-//                    max = arr[i];
+//            Float compare = (float) arr[i].compareTo(max);
+//            if(compare>0)
+//                max = arr[i];
 //        }
 //        System.out.println("\nMaximum Integer is: "+max);
 //    }
